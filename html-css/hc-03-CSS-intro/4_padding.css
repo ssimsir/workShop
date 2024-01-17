@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background-color: darksalmon;
+    margin: 50px;
+    border: 1px solid red;
+    /* text-align: center; */
+}
+
+.div1{
+    background-color: crimson;
+    width: 150px;
+    height: 150px;
+    margin-top: 250px;
+}
+
+.div2{
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    border: 5px solid black;
+    padding: 10px;
+
+}
+
+.div3{
+    background-color: fuchsia;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+span{
+    background-color: red;
+    font-size: 3rem;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+

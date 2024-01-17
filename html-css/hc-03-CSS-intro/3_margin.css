@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    /* margin: 0px; */
+}
+
+.container{
+    background-color: aqua;
+    margin: 50px;
+    /* border:1px solid red; */
+    padding: 5px;
+    
+}
+
+#baslik{
+    background-color: chocolate;
+    /* margin: 0; */
+    margin: 100px auto;
+    width: 250px;
+    height: 150px;
+    border: 10px solid blue;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    
+
+}
+
+#par1{
+    background-color: green;
+    /* margin: 0; */
+
+    /* margin: 50px; */
+    /* margin: 20px 50px; */
+    /* margin: 10px 50px 30px; */
+    margin: 10px 20px 30px 40px;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    padding: 20px;
+    padding: 50px 20px 50px 20px;
+
+  
+}
+
+#par2{
+ background-color: magenta;
+ /* margin: 0; */
+ width: 50%;
+ margin: 100px auto;
+ /* margin: 50px; */
+ padding: 10px;
+}

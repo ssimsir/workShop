@@ -1,0 +1,38 @@
+span{
+    color: blue;
+}
+
+span:hover{
+    color: orange;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+#list{
+    border: 3px solid black;
+    list-style-type: none;
+}
+
+
+li{
+    background-color: magenta;
+}
+
+li:hover{
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#abc{
+    background-color: blue;
+}
+
+
+.abc{
+    background-color: yellow;
+}
+
+
