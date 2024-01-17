@@ -1,0 +1,31 @@
+
+
+#par1{
+    background-color: red;
+}
+
+#par2{
+    background-color: hsl(191, 71%, 18%);
+}
+
+#par3{
+    background-color: rgb(0, 255, 0);
+
+}
+
+#par4{
+    background-color: rgba(250, 255, 200, 1);
+
+}
+
+#par5{
+    background-color: #ff00ff50;
+}
+
+#par6{
+    background-color: #ff00ffB0;
+}
+
+#par7{
+    background-color: hsl(240, 100%, 50%);
+}

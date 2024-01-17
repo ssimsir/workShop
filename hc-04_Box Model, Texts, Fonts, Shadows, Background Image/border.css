@@ -1,0 +1,52 @@
+
+.par1{
+    border: 2px solid red;
+    text-align: center;
+}
+
+.par2{
+    border-width: 5px;
+    border-style: dotted;
+    border-color: blue;
+}
+
+.par3{
+    border: 2px double magenta;
+}
+
+.par4{
+    border: 10px dashed orangered;
+}
+
+.par5{
+    border: 5px outset olive;
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+
+#span1{
+    border: 10px double red;
+    display: block;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.span-container{
+    border: 5px solid blue;
+    /* text-align: center; */
+    text-align: center;
+}
+
+#foto{
+    text-align: center;
+    margin: auto;
+}
+
+#harvey{
+    border: 5px solid fuchsia;
+    width: 300px;
+    height: 150px;
+    margin: 50px; padding: 50px;
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.font1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.font2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'BioRhyme Expanded', serif;
+    font-family: "Bungee";
+
+}
+
+.font3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    font-family: 'Sacramento', cursive;
+    /* font-weight: 900; */
+}
+
+.font4{
+    font-family: 'Pacifico', cursive;
+}
+
+.font5{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Bungee" ;
+    src: url(./fonts/BungeeSpice-Regular.ttf);
+}

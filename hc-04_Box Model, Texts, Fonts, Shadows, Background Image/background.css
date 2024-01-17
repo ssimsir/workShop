@@ -1,0 +1,40 @@
+
+
+.container{
+    border: 2px solid black;
+    width: 20rem;
+    height: 20rem;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: justify;
+    color: yellow;
+    text-shadow: 3px 3px 5px yellow;
+    overflow: scroll;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+
+
+    /* background-image: url(./img/resim-2.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),url(./img/resim-2.jpg);
+
+
+
+}
+
+.container::-webkit-scrollbar{
+    width: 0;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+
+.container2{
+    border: 2px solid red;
+    width: 20rem ;
+    height: 20rem;
+    margin: auto;
+    background-image: linear-gradient(to right, red, black);
+    box-shadow: 5px 5px 10px black;
+}

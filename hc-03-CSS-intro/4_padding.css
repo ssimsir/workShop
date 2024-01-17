@@ -1,0 +1,25 @@
+
+*{
+
+    box-sizing: border-box;  /*tüm kutular için taşmaları engeller*/
+    margin:0;   /*başlangiç değerlerini sıfırlar*/
+    padding: 0;
+}
+
+.container{
+    background-color: darksalmon;
+    margin:50px;
+    border: 1px solid red;
+    
+}
+
+.div1{
+
+}
+
+.div2{
+
+}
+.div3{
+
+}

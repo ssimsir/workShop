@@ -1,0 +1,27 @@
+
+*{ /*universal selector bütün elemanları seçer*/
+    margin: 0px;
+
+
+}
+
+.container{
+    background-color: aqua;
+    margin: 20px;
+}
+#baslik
+{
+    background-color: chocolate;
+    /* margin: 0px; */
+    ma
+}
+
+#par1{
+    background-color: green;
+    margin: 10px 20px 30px 40px;
+}
+
+#par2{
+    background-color: magenta
+    /* margin:0px; */
+}
