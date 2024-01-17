@@ -29,6 +29,15 @@ console.log("Personelimiz ", adSoyad, "'ın Kimlik numarası : ", kimlik)
 //template literal veya string literal back thick adı
 console.log(`Personelimiz ${adSoyad} 'ın Kimlik numarası : ${kimlik}`)
 
+//BOOLEAN Data type
+//true veya false değer tutar
 
+
+//let deger=0;   0 false dönderir
+//let deger=1;   0 harici bir sayı true dönderir
+//let deger="";  boş string false dönderir
+//let deger = undefined;   false değer gönderir
+//let deger=NaN;  false değer dönderir
+//console.log(Boolean(deger))
 
 
