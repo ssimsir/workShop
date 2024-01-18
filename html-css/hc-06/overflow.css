@@ -1,0 +1,36 @@
+
+.box{
+    border: 5px solid olive;
+    margin-bottom: 4rem;
+    width: 20rem;
+    height: 4rem;
+    background-color: bisque;
+}
+
+.box1{
+    overflow: visible;  /*default değer*/
+}
+.box2{
+    overflow: hidden;
+}
+.box3{
+    overflow: scroll;
+}
+.box4{
+    overflow: auto;
+}
+.box5{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.par1{
+    background-color: fuchsia;
+    width: 30rem;
+}
+/*scroll barları kaldırmak için kullanılan kodlar*/
+.box5::-webkit-scrollbar{
+    /* width: 0; */
+    /* visibility: hidden; */
+    display: none;
+}
