@@ -3,7 +3,9 @@
     /* padding: 0px;
     margin: 0px; */
 }
-
+html {
+    font-size: 20px;  /*rem değeri burdan alır default 1 rem 16px*/
+}
 .abs{
     background-color: chocolate;
     width: 350px;
@@ -27,4 +29,24 @@
     background-color: lime;
     width: 50vw;
     height: 10vh;
+}
+
+.div5{
+    font-size: 25px;
+    
+}
+.div6{
+    font-size: 2em;  /*50 px*/
+}
+.div7{
+    font-size: 2em;  /*100 px*/
+}
+.div8{
+    font-size: 25px;
+}
+.div9{
+    font-size: 5rem;
+}
+.div10{
+    font-size: 5rem;
 }
