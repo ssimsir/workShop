@@ -14,14 +14,17 @@
 .div2{
     background-color: blueviolet;
     width: 50%;
+    height: 200px;
 }
 
 .div3{
     background-color: chocolate;  
     width: 50%; 
+    height: 100%;
 }
 
 .div4{
     background-color: lime;
     width: 50vw;
+    height: 10vh;
 }
