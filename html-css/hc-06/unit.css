@@ -1,0 +1,27 @@
+
+*{
+    /* padding: 0px;
+    margin: 0px; */
+}
+
+.abs{
+    background-color: chocolate;
+    width: 350px;
+    width: 10cm;
+    width: 2in;
+}
+
+.div2{
+    background-color: blueviolet;
+    width: 50%;
+}
+
+.div3{
+    background-color: chocolate;  
+    width: 50%; 
+}
+
+.div4{
+    background-color: lime;
+    width: 50vw;
+}
