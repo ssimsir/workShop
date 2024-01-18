@@ -1,0 +1,25 @@
+*{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+head{
+    background-color: teal;
+}
+
+main{
+    background-color: skyblue;
+}
+
+aside{
+    background-color: darkorange;
+}   
+
+article{
+    background-color: greenyellow;
+}
+
+footer{
+    background-color: coral;
+}
