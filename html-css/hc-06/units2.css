@@ -6,9 +6,13 @@
 
 body{
     border: 2px solid red;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
 }
+
+/* html{
+    font-size: 10px;   /*1 rem 10 px oldu
+} */
 
 /* body::-webkit-scrollbar{
     display: none;
@@ -48,6 +52,26 @@ body{
 
 .relateive-vw{
     background-color: lime;
-    width: 50vw;
-    height: 30vh;
+    width: 5vw;
+    height: 10vh;
+}
+
+.em1{
+    font-size: 25px;  
+}
+.em2{
+    font-size: 2em;    /*50 px*/
+}
+.em3{
+    font-size: 2em;   /*100px*/
+}
+
+.rem1{
+    font-size: 25px;
+}
+.rem2{
+    font-size: 5rem;
+}
+.rem3{
+    font-size: 5rem;
 }
