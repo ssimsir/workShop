@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    border: 2px solid red;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+.absolute-in{
+    width: 10in;
+    background-color: cornflowerblue;
+}
+
+.absolute-cm{
+    width: 10cm;
+    background-color: aqua;
+}
+
+.absolute-mm{
+    width: 10mm;
+    background-color: orange;
+}
+
+.absolute-px{
+    width: 10px;
+    background-color: chartreuse ;
+}
+
+.relative-percentage1{
+    background-color: blueviolet;
+    width: 50%;
+    
+    height: 200px;
+}
+
+.relative-percentage2{
+    background-color: chocolate;
+    width: 50%;
+    height: 40%;
+}
+
+.relateive-vw{
+    background-color: lime;
+    width: 50vw;
+    height: 30vh;
+}
