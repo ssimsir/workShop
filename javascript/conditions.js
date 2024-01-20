@@ -24,9 +24,9 @@ if (num1 < 0) {
 
 //!Örnek 2 girilen sayının en büyüğü
 
-const  sayi1=NaN
-const  sayi2=undefined
-const  sayi3=null
+const  sayi1=45
+const  sayi2=345
+const  sayi3=23
 
 //? 1. yöntem build in fonksiyon yardımıyla
 console.log(Math.max(sayi1, sayi2, sayi3))   
@@ -62,3 +62,36 @@ if (sayi1>=sayi2 && sayi1>=sayi3){
     console.log("yanlış işlem")
 }
 
+
+
+//?  4. yöntem
+
+
+let enBuyuk=sayi1;
+
+if (sayi2>enBuyuk){
+    enBuyuk=sayi2
+}
+
+if (sayi3>enBuyuk){
+    enBuyuk=sayi3
+}
+
+console.log("En Büyük Sayi", enBuyuk)
+
+
+
+//! Ornek: Condition birleştirme
+
+const yaş = 20;
+const cinsiyet = "Erkek";
+const sağlıklı = true;
+
+//?   built in fonksiyon js içinde tanımlı olan fonksiyonlar
+const koşul = yaş >= 18 && cinsiyet.toLowerCase() === "erkek" && sağlıklı===true;
+
+if (koşul===true) {
+	console.log("Askerlik Yapmalı");
+} else {
+	console.log("Askerlik Yapması gerekmez");
+}
