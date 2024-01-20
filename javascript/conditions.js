@@ -116,3 +116,38 @@ calismaSuresi >= 10 ? (maas = maas * 1.5) : "";
 
 maas=calismaSuresi>=10?maas*1.5:maas;
 console.log("maaş : ", maas)
+
+
+
+/*
+/*   short circuit
+/**/
+
+//! && operatörü   true ise yanındaki ifadeyi çalıştır
+let salary = 40000
+let year=10
+
+ year >=10 &&  (salary = salary*1.5)
+
+ console.log("salary", salary)
+
+ //? Tek durum var ise short circuit
+ //? 2 durum var ise ternary
+ //? 3-6 arası if-else
+ //? 6 dan fazla ise switch-case
+
+
+
+ //! || operatörü   false ise yanındaki ifadeyi çalıştır
+
+ const sene = 10;
+ let  result = "";
+ sene >=18 || (result = "çocuk")
+
+ console.log(result)
+
+
+//?falsy bir değerin tespit edilip buna göre başlangıç değerinin atanması için sıklıkla kullanılır
+let myVar = result || "noname"
+console.log(myVar)
+
