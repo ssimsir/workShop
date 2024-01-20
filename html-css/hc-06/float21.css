@@ -1,4 +1,18 @@
 
 .img-float{
     width: 40%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;;
+}
+
+.par1{
+    background-color: chocolate;
+}
+/* .par2{
+    clear: left;
+} */
+
+.clear{
+    clear: both;
 }
