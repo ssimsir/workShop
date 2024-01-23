@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(../background_image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container{
+    margin: 30px 15px;
+    background-color: rgba(0, 0, 0, 0.421);
+}
+
+#header{
+    text-align: center;
+    
+}
+#title{
+    color: white;
+    margin: auto;
+    font-family: 'Bowlby One SC', sans-serif;
+    font-variant: small-caps;
+}
+#description{
+    color: white;
+}
+#survey-form{
+    margin:auto ;
+    background-color: black;
+    width: 275px;
+    padding: 15px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem;
+}
+
+.box1{
+    margin: 10px auto ;
+}
+.box1 label{
+    width: 260px;
+    margin: 3px auto;
+}
+
+
+.box1 input{
+    width: 260px;
+    height: 30px;
+    margin: 5px auto;
+}
+
+.box2 label{
+    width: 260px;
+    margin: 3px auto;
+}
+.box2 select{
+    width: 250px;
+    height: 30px;
+    margin: 5px auto;
+}
+
+.box3{
+    margin: 7px auto;
+
+}
+
+.box4{
+    margin: 7px auto;
+
+}
+
+.box5  {
+    margin: 7px auto;
+}
+.box5 textarea{
+    width: 250px;
+    height: 60px;
+}
+
+#box6{
+    text-align: center;
+    width: 250px;
+
+}
+#submit{
+    background-color: red;
+    color: white; 
+    border-radius: 15px;
+    
+    padding: 8px 32px;
+}
+#submit:hover{
+    cursor: pointer;
+}
+

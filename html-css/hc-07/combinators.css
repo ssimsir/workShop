@@ -5,3 +5,46 @@ div p{
 .container div p{
     /* background-color: red; */
 }
+
+p + div {  /* p den hemen sonra gelen divi seçer*/
+
+}
+
+div + p { /* divden hemen sonra gelen p yi seçer */
+
+}
+
+div ~ p { /* divden sonra gelen bütün pleri seçer*/
+
+}
+
+h2[title="başlık1"]{
+    background-color: teal;
+}
+
+p[title="paragraf1"]{
+    background-color: greenyellow;
+}
+
+h2[title="paragraf2"]{
+    background-color: peru;
+}
+
+.out{
+    border: 2px solid red;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1 rem;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 3rem;
+}
+
+.out:hover{
+    outline: 5px dashed purple;
+    outline-offset: .5 rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
