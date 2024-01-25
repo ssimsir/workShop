@@ -1,0 +1,72 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    background-color: bisque;
+    display: flex;
+}
+
+nav .left img{
+    width: 50px;
+    height: 50px;
+}
+
+nav .left,
+nav .middle,
+nav .right{
+    background-color: gainsboro;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px;
+}
+
+nav .left{
+
+   
+}   
+nav .middle{
+
+
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+nav .middle a{
+    text-decoration: none;
+}
+
+nav .right{
+
+   
+
+
+}
+
+header{
+    background-color: bisque;
+    display: flex;
+    gap: 1rem;
+}
+
+.img{
+    border: 2px solid red;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+
+}

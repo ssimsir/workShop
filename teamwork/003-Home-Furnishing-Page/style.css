@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota:wght@300;400&display=swap");
+
+*{
+    margin: 0px;
+    padding: 0%;
+}
+.container{
+    border: 2px solid black; 
+    margin: 50px 100px;
+    border-radius: 1.5rem;
+    box-shadow: 2px 2px 50px black;
+}
+

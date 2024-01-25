@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 1rem;
+}
+ul{
+    background-color: rebeccapurple;
+    list-style-type: none;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem 0;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+
+    height: 50vh;
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+
+    justify-content: center;
+    align-items: center;
+}
+
+ul *{
+    background-color: fuchsia;
+    display: flex;
+}
+
+ul li {
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid purple;
+}
+
+.li1{
+    order: 2;
+}
+
+.li2{
+    order: 1;
+}
+
+.li3{
+    order: 3;
+}
+
+.li4{
+    order: 1;
+}
+
+.li5{
+    order: 4;
+}
+
+.container{
+    margin-top: 20px;
+    background-color: purple;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+
+}
+
+.container *{
+    background-color: orange;
+    height: 50px;
+}
+
+header{
+    flex-basis: 100%;
+}
+
+aside{
+    /* flex-basis: 20%; */
+    flex-grow: 1;
+}
+
+
+main{
+    /* flex-basis: 50%; */
+    flex-grow: 5;
+}
+
+
+article{
+    /* flex-basis: 20%; */
+    flex-grow: 1;
+}
+
+
+footer{
+    flex-basis: 100%;
+}
+
+.shrink{
+    background-color: indigo;
+    margin-top: 50px;
+}
+
+.shrink *{
+    width: 200px;
+    height: 100px;
+    display: flex;
+}
+
+.box1{
+    background-color: orange;
+    flex-shrink: 0;
+
+}
+.box2{
+background-color: crimson;
+    flex-shrink: 5;
+
+}
+.box3{
+background-color: greenyellow;
+    flex-shrink: 2;
+
+}
+
+.container2 {
+    margin-top: 20px;
+    background-color: purple;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+  }
+  
+  .container2 * {
+    background-color: orange;
+    height: 50px;
+
+  }
+  
+  .container2 header {
+    width: 100%;
+  
+  }
+  
+  .container2 footer {
+    width: 100%;
+   } 
+  
+  .container2 aside {
+    width: calc((33.33%) - (2rem/3));
+  }
+  
+  .container2 main {
+    width: calc((33.33%) - (2rem/3));
+  }
+  
+  .container2 article {
+    width: calc((33.33%) - (2rem/3));
+  }

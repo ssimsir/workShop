@@ -1,30 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>HOME FURNISHING</title>
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
   <body>
-    <div class="main-container">
+    <div class="container">
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                 ICONBAR                                 -->
+      <!-- ----------------------------------------------------------------------- -->
       <div class="icon-bar">
-        <img src="./images/logo.png" alt="logo" class="logo" />
-        <select name="categories" id="categories">
-          <option value="all">All Categories</option>
-          <option value="wooden">Wooden</option>
-          <option value="linen">Linen</option>
-          <option value="bedroom">Bedroom</option>
-          <option value="kitchen">Kitchen</option>
-        </select>
+        <div class="input-part">
+          <img src="./images/logo.png" alt="" class="logo" />
+          <div class="select-category">
+            <select name="" id="">
+              <option value="" selected>All categories</option>
+              <option value="">Wooden</option>
+              <option value="">Linen</option>
+              <option value="">Bedroom</option>
+              <option value="">Kitchen</option>
+            </select>
+          </div>
+          <div class="search-input">
+           
+            <input type="text" placeholder="Enter a word"/>
+            <img src="./images/magnifier.png" alt="" />
 
-        <div class="search-input">
-          <input type="text" name="search" />
-          <img src="./images/magnifier.png" alt="magnifier" />
-        </div>
-        <div class="support-number">
-          <p class="number">0 800 456 80 80</p>
-          <p class="support">Support 24/7</p>
+          </div>
+          <div class="support-number">
+            <p class="number">0 800 456 80 80</p>
+            <p class="support">Support 24/7</p>
+          </div>
         </div>
 
         <div class="icons">
@@ -32,8 +43,149 @@
           <img src="./images/heart.png" alt="" />
           <img src="./images/shoppingCart.png" alt="" />
         </div>
-        
       </div>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                 NAVBAR                                  -->
+      <!-- ----------------------------------------------------------------------- -->
+      <nav>
+        <div class="button">
+          <img src="./images/unordered-list.png" alt="" />
+          <p>Select By Categories</p>
+        </div>
+        
+          <ul class="navbar">
+            <li>Wooden</li>
+            <li>Linen</li>
+            <li>Linen</li>
+            <li>Linen</li>
+            <li>Linen</li>
+          </ul>
+       
+      </nav>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                 HEADER                                  -->
+      <!-- ----------------------------------------------------------------------- -->
+      <header>
+        <div class="essentials">
+          <div class="Essential-text">
+            Furniture essentials to a functional home design
+          </div>
+          <div class="sofa">
+            <img src="./images/sofa.png" alt="" />
+          </div>
+        </div>
+        <div class="ligthing">
+          <p class="light">Why is lighting is important in design</p>
+
+          <img src="./images/armchair.png" alt="">
+        </div>
+      </header>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                CATEGORY                                 -->
+      <!-- ----------------------------------------------------------------------- -->
+      <section class="categorySection">
+        <div class="category-part">
+          <p class="browseCategory">Browse By Category</p>
+          <div class="categories">
+            <div class="part">
+              <p>Living Room</p>
+              <img src="./images/living-room.jpg" alt="" />
+            </div>
+            <div class="part">
+              <p>Kitchen</p>
+              <img src="./images/kitchen.jpg" alt="" />
+            </div>
+            <div class="part">
+              <p>Bedroom</p>
+              <img src="./images/bedroom.jpg" alt="" />
+            </div>
+            <div class="part">
+              <p>Accesories</p>
+              <img src="./images/accesories.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                PRODUCTS                                 -->
+      <!-- ----------------------------------------------------------------------- -->
+      <section class="productSection">
+        <div class="product-part">
+          <p class="browseProduct">Browse By Products</p>
+          <div class="products">
+            <div class="product">
+              <img src="./images/bed.jpg" alt="" />
+              <p class="product-text">Beds</p>
+            </div>
+            <div class="product">
+              <img src="./images/linen.jpeg" alt="" />
+              <p class="product-text">Linens</p>
+            </div>
+            <div class="product">
+              <img src="./images/carpet.jpg" alt="" />
+              <p class="product-text">Carpets & Rugs</p>
+            </div>
+            <div class="product">
+              <img src="./images/shelfs.jpg" alt="" />
+              <p class="product-text">Shelf & Bookcases</p>
+            </div>
+            <div class="product">
+              <img src="./images/dining-table.jpg" alt="" />
+              <p class="product-text">Dining Tables</p>
+            </div>
+            <div class="product">
+              <img src="./images/kids.jpg" alt="" />
+              <p class="product-text">Kids Room</p>
+            </div>
+         
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                 CONTACT                                 -->
+      <!-- ----------------------------------------------------------------------- -->
+      <section class="contact">
+        <div class="expert">
+          <p class="lookForExpert">
+            Looking for expert guidance to design <span>your home?</span>
+          </p>
+          <p class="leaveInfo">
+            Leave your information here and receive consultation with our
+            interior design experts.
+          </p>
+        </div>
+        <div class="formSection">
+            <form action="">
+                <div class=" formElement name">
+                <label for="name">Full Name*</label>
+                <input type="text">
+                </div>
+                <div class="formElement email">
+                <label for="email">Email*</label>
+                <input type="email" id="email">
+                </div>
+                <div class="formElement phone">
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone">
+                </div>
+
+                <button class="submit">Gönder</button>
+              
+            </form>
+        </div>
+      </section>
+      <!-- ----------------------------------------------------------------------- -->
+      <!--                                 FOOTER                                  -->
+      <!-- ----------------------------------------------------------------------- -->
+      <footer>
+        <div class="copyright">
+            <p class="right">©2023.All Rights Reserved by Helen</p>
+            <div class="policy">
+                <a href="">Privacy Policy</a>
+                 <a href="">Terms of Service</a> 
+            </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
