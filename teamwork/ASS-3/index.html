@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navBar">
+      <h1 class="navBar-title">Welcome to Clarus Gallery</h1>
+      <ul class="navBar-list">
+        <li>Home</li>
+        <li>About</li>
+        <li>Gallery</li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="pictures" id="pictures">
+      </div>
+    </main>
+
+    <footer>
+            <p>©2024</p>
+    </footer>
+    <script>
+      function getSrc() {
+        return `https://picsum.photos/id/${Math.floor(Math.random() * 1000)}/900/600`;
+      }
+
+      for (let i = 0; i < 40; i++) {
+        let pictureDiv = document.createElement("div");
+        pictureDiv.className = "picture";
+        
+        let img = document.createElement("img");
+        let imgSrc=getSrc();
+        img.src = imgSrc;
+        img.className = "image";
+        pictureDiv.appendChild(img);
+
+        let imgSrcP=document.createElement("a");
+        imgSrcP.innerHTML=imgSrc;
+        imgSrcP.href=imgSrc;
+        imgSrcP.className="imageText";
+        pictureDiv.appendChild(imgSrcP);
+
+
+        document.getElementById("pictures").appendChild(pictureDiv);
+      }
+    </script>
+
+  </body>
+</html>

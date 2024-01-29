@@ -1,0 +1,116 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navBar{
+    background-color: #F6B088;
+    text-align: center;
+    position: fixed;
+    opacity: 0.75;
+    width: 100%;
+    z-index: 1;
+}
+
+.navBar-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    padding:1rem .5rem .5rem .5rem;
+   
+}
+
+.navBar-list{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1rem;
+}
+
+.navBar-list li{
+    padding:1rem 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    list-style: none;
+    border-radius: 16px;
+}
+
+.navBar-list li:hover{
+    background-color: #F76B1C;
+}
+
+main{
+    padding-top: 9rem;
+    background-color: #F4F4F4;
+}
+
+main .pictures{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 2rem;
+}
+
+main .picture{
+    width: 350px;
+    height: 300px;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    
+}
+
+main .image:hover{
+    transform: scale(1.05);
+    border: 2px solid black;
+    box-shadow: 3px 1px 10px black;
+    cursor: cell;
+}
+
+main .imageText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: greenyellow;
+    position: absolute;
+    bottom: 20px;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    opacity: 0;
+
+    
+}
+
+.picture:hover .imageText{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid black;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #F6B088;
+    text-align: center;
+    font-size: 32px;
+}
