@@ -6,36 +6,70 @@
     <script src="./calculator.js"></script>
     <link rel="stylesheet" href="./calculator.css" />
     <script>
-        let screen = ''
-        function calculate(val){
-            if (val==='='){
-                
-            }
-            screen += val;
-            document.getElementById("display").value=screen;
-            console.log(screen)
-        }
+      let screen = "";
+      let screenProcess = "";
+      function calculate(val) {
+        if (val === "=") {
+          alert(screen);
+          let result=eval(screen);
+          alert(result);
+          screen ="=" + result;
 
+        } else if (val === "+") {
+          if (screen !==""){
+            screen+="+";
+          }
+        } else if (val === "-") {
+          if (screen !==""){
+            screen+="-";
+          }
+        } else if (val === "/") {
+          if (screen !==""){
+            screen += "/";
+          }
+        } else if (val === "X") {
+          if (screen !==""){
+            screen += "*";
+          }
+
+        } else {
+          screen += val;
+        }
+        document.getElementById("display").value = screen;
+
+      }
     </script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <div class="screen">
-        <input type="text" id="display"/>
+        <input type="text" id="display" />
       </div>
       <div class="keybord">
         <div class="keybord-div">
-          <button onclick="calculate('7')">7</button><button onclick="calculate('8')">8</button><button onclick="calculate('9')">9</button><button onclick="calculate('X')">X</button>
+          <button onclick="calculate('7')">7</button
+          ><button onclick="calculate('8')">8</button
+          ><button onclick="calculate('9')">9</button
+          ><button onclick="calculate('X')">X</button>
         </div>
         <div class="keybord-div">
-          <button onclick="calculate('4')">4</button><button onclick="calculate('5')">5</button><button onclick="calculate('6')">6</button><button onclick="calculate('/')">/</button>
+          <button onclick="calculate('4')">4</button
+          ><button onclick="calculate('5')">5</button
+          ><button onclick="calculate('6')">6</button
+          ><button onclick="calculate('/')">/</button>
         </div>
         <div class="keybord-div">
-          <button onclick="calculate('1')">1</button><button onclick="calculate('2')">2</button><button onclick="calculate('3')">3</button><button onclick="calculate('-')">-</button>
+          <button onclick="calculate('1')">1</button
+          ><button onclick="calculate('2')">2</button
+          ><button onclick="calculate('3')">3</button
+          ><button onclick="calculate('-')">-</button>
         </div>
         <div class="keybord-div">
-          <button onclick="calculate('0')">0</button><button onclick="calculate('.')">.</button><button onclick="calculate('=')">=</button><button onclick="calculate('+')">+</button>
+          <button onclick="calculate('0')">0</button
+          ><button onclick="calculate('.')">.</button
+          ><button onclick="calculate('=')">=</button
+          ><button onclick="calculate('+')">+</button>
         </div>
       </div>
     </div>
