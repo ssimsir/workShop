@@ -9,37 +9,45 @@
       let screen = "";
       let screenProcess = "";
       function calculate(val) {
-        if (val === "=") {
-          alert(screen);
-          let result=eval(screen);
-          alert(result);
-          screen ="=" + result;
-
+        if (val === "AC") {
+          screen = "";
+        } else if (val === "±") {
+        } else if (val === "%") {
+          if (screen !== "") {
+            screen += "%";
+          }
+        } else if (val === "=") {
+          if (screen.includes("%")) {
+            let yuzdeArr = screen.split("%");
+            screen = (yuzdeArr[0]*yuzdeArr[1])/100;
+   
+          } else {
+            let result = eval(screen);
+            screen = "=" + result;
+          }
         } else if (val === "+") {
-          if (screen !==""){
-            screen+="+";
+          if (screen !== "") {
+            screen += "+";
           }
         } else if (val === "-") {
-          if (screen !==""){
-            screen+="-";
+          if (screen !== "") {
+            screen += "-";
           }
-        } else if (val === "/") {
-          if (screen !==""){
+        } else if (val === "÷") {
+          if (screen !== "") {
             screen += "/";
           }
         } else if (val === "X") {
-          if (screen !==""){
+          if (screen !== "") {
             screen += "*";
           }
-
         } else {
           screen += val;
         }
         document.getElementById("display").value = screen;
-
       }
     </script>
-    <title>Document</title>
+    <title>Hesap Makinesi</title>
   </head>
   <body>
     <div class="container">
@@ -48,28 +56,33 @@
       </div>
       <div class="keybord">
         <div class="keybord-div">
+          <button class="function" onclick="calculate('AC')">AC</button
+          ><button class="function" onclick="calculate('±')">±</button
+          ><button class="function" onclick="calculate('%')">%</button
+          ><button class="oprator" onclick="calculate('÷')">÷</button>
+        </div>
+        <div class="keybord-div">
           <button onclick="calculate('7')">7</button
           ><button onclick="calculate('8')">8</button
           ><button onclick="calculate('9')">9</button
-          ><button onclick="calculate('X')">X</button>
+          ><button class="oprator" onclick="calculate('X')">x</button>
         </div>
         <div class="keybord-div">
           <button onclick="calculate('4')">4</button
           ><button onclick="calculate('5')">5</button
           ><button onclick="calculate('6')">6</button
-          ><button onclick="calculate('/')">/</button>
+          ><button class="oprator" onclick="calculate('-')">-</button>
         </div>
         <div class="keybord-div">
           <button onclick="calculate('1')">1</button
           ><button onclick="calculate('2')">2</button
           ><button onclick="calculate('3')">3</button
-          ><button onclick="calculate('-')">-</button>
+          ><button class="oprator" onclick="calculate('+')">+</button>
         </div>
         <div class="keybord-div">
-          <button onclick="calculate('0')">0</button
+          <button class="button-0" onclick="calculate('0')">0</button
           ><button onclick="calculate('.')">.</button
-          ><button onclick="calculate('=')">=</button
-          ><button onclick="calculate('+')">+</button>
+          ><button onclick="calculate('=')">=</button>
         </div>
       </div>
     </div>

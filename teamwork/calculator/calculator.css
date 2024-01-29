@@ -2,25 +2,29 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 @font-face {
     font-family: 'digital';
-    src: url('./font/digital-7.ttf');
+    src: url('./font/digital-7monoitalic.ttf');
+    /* src: url('./font/digital-7.ttf'); */
 }
 
 .container{
-    border: 2px solid black;
-    width: 40vw;
+    background-color: black;
+    width: 30vw;
     height: auto;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 40px;
+    border-radius: 50px;
+    padding: 30px;
 }
 
 .screen{
-    border: 2px solid black;
     margin: 3px;
-    height: 50px
+    height: 100px;
+    padding: 5px 10px;
 }
 .screen input{
     box-sizing: border-box;
@@ -29,24 +33,53 @@
     height: 100%;
     margin: auto;
     font-family: "digital";
-    font-size: 3rem;
+    font-size: 5rem;
     direction: rtl;
     background-color: black;
     color: chartreuse;
+    border: 2px solid black;
 }
 
 .keybord{
-    border: 2px solid black;
+    background-color: black;
     margin: 3px;
 }
 
 .keybord-div {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .keybord-div button{
+    background-color : #333;
+    border: 1px solid black;
     display: inline-block;
-    width:25% ;
-    height: 50px;
-    font-family: "digital";
-    font-size: 2rem;
+    width:90px ;
+    height: 90px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    border-radius: 50%;
+    margin: 2px;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.keybord-div button:hover{
+    opacity: 0.5;
+}
+
+.keybord-div .button-0{
+    width: 185px;
+    border-radius: 50px;
+}
+
+.keybord-div .oprator{
+    background-color: #F1A33C;
+}
+
+.keybord-div .function{
+    color: black;
+    background: #a5a5a5;
 }
