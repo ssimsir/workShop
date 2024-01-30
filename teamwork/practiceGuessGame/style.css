@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+
+.container{
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 2px solid black;
+    margin: 10px 50px;
+    border-radius: 25px;
+}
+
+.containerNav{
+    margin: 100px 50px 10px 50px;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+
+}
+
+.containerMain{
+    margin: 10px 50px;
+}
+
+.numberToGuessDiv{
+    position: fixed;
+    top: 60px;
+    background-color: black;
+    color: aquamarine;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 15px;
+    width: 30%;
+    height: 75px;
+    text-align: center;
+    border-top-left-radius : 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 5px 5px 10px darkblue;
+}
+
+.alertDiv{
+    text-align: center;
+    background-color: black;
+    color: aquamarine;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 50%;
+    height: 75px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px darkblue;
+}
+
+.containerMainRowDiv{
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+
+}
+.guessDivPredict, 
+.guessDivAlertSmaller,
+.guessDivAlertBigger,
+.guessDivCongratulations
+{
+    background-color: black;
+    color: aquamarine;
+
+    padding: 20px;
+    width: 40%;
+    height: 50px;
+    margin: 1px 10px;
+    text-align: center;
+}
+
+.guessDivAlertSmaller{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.guessDivAlertBigger{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.guessDivCongratulations{
+    background-color: aquamarine;
+    color:black ;
+}
