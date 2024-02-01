@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap');
+
+@import './themes.css';
+
+:root{
+
+    /* COLORS */
+    --white:#ececec;
+    --orange: #e8a935;
+    --orange-dark: #f7a100;
+    --blue: rgb(14, 147, 183);
+    --blue-dark: rgb(5, 20, 227);
+    --yesil: #3fe408;
+    --yesil-koyu: #0e4216;
+
+    /* renk paleti */
+    --green-1:#042940;
+    --green-2:#005C53;
+    --green-3:#9FC131;
+    --green-4:#DBF227;
+    --green-5:#D6D58E;
+
+
+    /* FONT */
+    --ff-workbench:'Workbench', sans-serif;;
+    --ff-Josefin:'Josefin Slab', serif;
+
+    /* FONT_SIZES */
+
+    --fs-lg:1.4rem;
+    --fs-xl:2rem;
+    --fs-xxl:3rem;
+}
+
+
+body{
+    background-color: var(--white);
+    /* font-family: 'Workbench', sans-serif; */
+    /* font-family: 'Josefin Slab', serif; */
+}
+
+h1{
+    background-color: var(--blue);
+    font-family: var(--ff-Josefin);
+}
+
+p{
+    background-color: var(--blue-dark);
+    color: var(--orange-dark);
+    font-family: var(--ff-workbench);
+    font-size: var(--fs-lg);
+    /* font-family: var(--ff-Josefin); */
+}
+
+.container{
+    border: 2px solid red;
+    width: 500px;
+    height: 300px;
+    
+}
+
+.light{
+    width: 150px;
+    height: 150px;
+    background-color: var(--green-3);
+    background-color: var(--grey-5);
+    font-family: var(--ff-sevillana);
+}
+
+.dark{
+    width: 150px;
+    height: 150px;
+    background-color: var(--green-2);
+    font-family: var(--ff-yeon);
+}

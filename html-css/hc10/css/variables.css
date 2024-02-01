@@ -1,8 +1,0 @@
-:root{
-    --white: #ececec;
-    --orange: orange;
-}
-
-body{
-    background-color: var(--white);
-}
