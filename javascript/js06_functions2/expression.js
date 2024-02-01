@@ -32,3 +32,15 @@ const usAl = function(taban, us){
 
 const us = usAl(2,4)
 console.log(us)
+
+
+// ? ======================================
+// ? Example 3
+// ? ======================================
+
+let daireAlaniHesapla = function(r){
+    return Math.PI*r*r;
+}
+
+const r =13
+console.log(daireAlaniHesapla(r));
