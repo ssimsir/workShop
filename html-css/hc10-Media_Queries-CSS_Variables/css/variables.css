@@ -75,3 +75,24 @@ p{
     background-color: var(--green-2);
     font-family: var(--ff-yeon);
 }
+
+@media screen and (min-width:850px) and (max-width:950px) {
+    body{
+        background-color: red;
+    }
+}
+@media screen and (max-width:850px) {
+    body{
+        background-color: darkorange;
+    }
+}
+@media screen and (max-width:600px) {
+    body{
+        background-color: olive;
+    }
+}
+@media screen and (max-width:300px) {
+    body{
+        background-color: fuchsia;
+    }
+}
