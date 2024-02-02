@@ -1,0 +1,38 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    border:2px solid orange;
+    height: 10vh;
+}
+
+.container{
+    background-color: #dedede;
+
+}   
+.product{
+    margin: 5px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.productImg{
+    padding:10px;
+    width: 50%;
+
+    
+}
+
+.productImg img{
+    width: 100%;
+}
+
+.productDetail{
+    width: 50%;
+
+}

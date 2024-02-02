@@ -6,10 +6,10 @@ The Responsive Product Card project is a demonstration of an attractive and user
 
 ### Expected Outcome:
 
-![Responsive Product Card](./productcard.png)
+![Responsive Product Card](./img/productcard.png)
 <br>
 
-![Responsive Product Card](./productcard.gif)
+![Responsive Product Card](./img/productcard.gif)
 
 ### Demo
 
