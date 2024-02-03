@@ -1,0 +1,93 @@
+
+
+.main{
+    background-color: rgba(194, 239, 127, 0.88);
+    width: 90%;
+    margin: 50px auto;
+    position: relative;
+    height: 2000px;
+    
+}
+
+.box1{
+    background-color: rgba(0, 0, 255, 0.886);
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+.ic2{
+    background-color: rgba(135, 236, 64, 0.769);
+    width: 50px;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+
+.box2{
+    background-color: rgba(255, 0, 255, 0.769);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    /* margin-top: 20px;
+    margin-left: 50px; */
+    z-index: 2;
+}
+.icerde{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.box3{
+    background-color: rgba(255, 140, 0, 0.896);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 3;
+}
+
+.box4{
+    background-color: rgba(255, 255, 0, 0.886);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.paragraf2{
+    background-color: rgba(128, 128, 0, 0.605);
+    border-radius: 20px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 25%;
+    
+}
+
+.last{
+    width: 200%;
+}
+
+.harvey{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    color: yellow;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

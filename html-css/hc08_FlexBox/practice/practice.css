@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+
+}
+
+nav .left img{
+    width: 50px;
+    height: 50px;
+}
+
+nav .left,
+nav .middle,
+nav .right{
+    /* width: 33%; */
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+nav .left{
+    background-color: gainsboro;
+    flex: 1;
+
+
+}
+
+nav .middle{
+    background-color: gainsboro;
+    flex: 1;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 5;
+
+
+}
+
+nav .middle a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav .right{
+    background-color: gainsboro;
+    flex: 1;
+    justify-content: space-evenly;
+
+
+
+}
+
+nav .right a{
+    font-size: 2rem;
+    color: black;
+}
+
+header{
+    background-color: bisque;
+    display: flex ;
+    gap: 1rem;
+    margin-top: 50px;
+    /* padding: 20px; */
+    justify-content: space-around;
+}
+
+.img{
+border: 2px solid red;
+/* flex: 1; */
+display: flex;
+justify-content: center;
+align-items: center;
+width: 30%;
+}
+
+.img img{
+    width: 100%;
+}
+
+.text{
+    border: 2px solid red;
+    /* flex: 2; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* line-height: 1; */
+    width: 60%;
+
+}

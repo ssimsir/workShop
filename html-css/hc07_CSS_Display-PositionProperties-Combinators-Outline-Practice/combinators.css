@@ -1,0 +1,76 @@
+div p{
+    /* background-color: olive; */
+}
+
+.container div p{
+    /* background-color: red; */
+}
+p + div { /*! p'den hemen sonra gelen div */
+    /* background-color: fuchsia; */
+}
+
+div + p {/*! div'den hemen sonra gelen p */
+    /* background-color: olive; */
+} 
+
+div ~ p { /*! div'den hemen sonra gelen bütün p'ler */
+    /* background-color: orange; */
+}
+
+.b1{
+    /* background-color: red; */
+}
+
+h2[title="baslik1"]{
+    background-color: teal;
+}
+
+p[title="paragraf1"],p[title="paragraf2"]{
+    background-color: greenyellow;
+}
+
+h2[title="baslik2"]{
+    background-color: peru;
+}
+a[target="_blank"]{
+    background-color: red;
+}
+
+
+p[title="paragraf2"]::first-line{
+    color: red;
+}
+p[title="paragraf2"]::first-letter{
+    font-size: 2rem;
+}
+
+.out{
+    border: 2px solid red;
+    width: 8rem;
+    height: 8rem;
+    font-size: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 3rem;
+
+}
+
+.out:hover{
+    outline: 5px dashed purple;
+    outline-offset: .5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cw{
+    border: 5px solid red;
+    width: 20rem;
+    margin: 50px auto;
+    text-align: center;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    outline: 5px solid purple;
+    outline-offset: 2rem;
+}

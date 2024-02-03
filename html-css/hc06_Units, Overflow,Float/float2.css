@@ -1,0 +1,56 @@
+.container{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.container *{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+header{
+    background-color: teal;
+    margin-top: 10px;
+}
+
+main{
+    background-color: skyblue;
+    padding: 5px;
+    /* height: 350px; */
+    /* overflow: auto; */
+}
+
+aside{
+    background-color: darkorange;
+    height: 300px;
+    width: 25%;
+    float: left;
+    margin-left: 10px;
+}
+
+article{
+    background-color: greenyellow;
+    height: 300px;
+    width: 70%;
+    float: left;
+
+
+}
+
+footer{
+
+    background-color: coral;
+    /* clear: left; */
+}
+/* 
+.clear{
+    clear: both;
+    border: none;
+} */
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}

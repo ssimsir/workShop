@@ -76,12 +76,13 @@ p{
     font-family: var(--ff-yeon);
 }
 
+
 @media screen and (min-width:850px) and (max-width:950px) {
     body{
         background-color: red;
     }
 }
-@media screen and (max-width:850px) {
+@media screen and (max-width:850) {
     body{
         background-color: darkorange;
     }

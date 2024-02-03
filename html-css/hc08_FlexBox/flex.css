@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+ul {
+  background-color: rebeccapurple;
+  list-style-type: none;
+  /* height: 50vh; */
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+ul * {
+  background-color: fuchsia;
+}
+
+ul li {
+  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid purple;
+  /* margin: 1rem; */
+}
+
+/* ol{
+    background-color: olive;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    background-color: yellow;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right{
+ background-color: orange;
+ width: 40%;
+} */
+
+.li1 {
+  order: 5;
+  padding: 2rem 0;
+}
+
+.li2 {
+  order: 2;
+  padding: 1rem 0;
+}
+
+.li3 {
+  order: 3;
+  padding: 5rem 0;
+}
+
+.li4 {
+  order: 1;
+  padding: 3rem 0;
+}
+
+.li5 {
+  order: 5;
+  padding: 2rem 0;
+}
+
+.container {
+  margin-top: 20px;
+  background-color: purple;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+.container * {
+  background-color: orange;
+  height: 50px;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.container header {
+  flex-basis: 100%;
+
+}
+
+.container footer {
+  flex-basis: 100%;
+ } 
+
+.container aside {
+  /* flex-basis: 20%; */
+  flex-grow: 1;
+}
+
+.container main {
+  /* flex-basis: 50%; */
+  flex-grow: 5;
+}
+
+.container article {
+  /* flex-basis: 20%; */
+  flex-grow: 1;
+}
+
+.shrink{
+    background-color: indigo;
+    margin-top: 50px;
+    display: flex;
+    gap:1rem
+}
+
+.shrink *{
+    /* width: 200px; */
+    height: 100px;
+}
+
+.box1{
+    background-color: orange;
+    /* flex-grow: 1;
+    flex-shrink: 0; */
+    /* flex: 1 1 0; */
+    flex: 1 0 5rem;
+}
+
+.box2{
+    background-color: crimson;
+    /* flex-grow: 1;
+    flex-shrink: 5; */
+    /* flex: 1 1 0; */
+    flex: 5;
+}
+
+.box3{
+    background-color: greenyellow;
+    /* flex-grow: 1;
+    flex-shrink: 2; */
+    /* flex: 1 1 0; */
+    flex: 1;
+}
+
+.container2 {
+    margin-top: 20px;
+    background-color: purple;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  
+  .container2 * {
+    background-color: orange;
+    height: 50px;
+
+  }
+  
+  .container2 header {
+    width: 100%;
+    background-image: url("https://picsum.photos/id/237/600/400");
+    background-size: contain;
+  
+  }
+  
+  .container2 footer {
+    width: 100%;
+
+   } 
+  
+  .container2 aside {
+    /* width: calc((33.3333%) - (2rem/3)); */
+    width: 20%;
+  }
+  
+  .container2 main {
+    /* width: calc((33.3333%) - (2rem/3)); */
+    width: 55%;
+  }
+  
+  .container2 article {
+    /* width: calc((33.3333%) - (2rem/3)); */
+    width: 20%;
+  }

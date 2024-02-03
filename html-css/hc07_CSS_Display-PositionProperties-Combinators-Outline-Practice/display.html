@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="display.css">
+    <title>Display</title>
+    <style>
+        a {
+            background-color: aqua;
+            margin: 50px;
+            padding: 50px;
+            width: 2000px;
+            height: 2000px;
+
+
+        }
+
+        button {
+            background-color: olive;
+            padding: 40px;
+            margin: 50px;
+
+        }
+
+        span {
+            background-color: orange;
+            margin: 20px;
+            padding: 50px;
+            display: block;
+        }
+
+        .box {
+            background-color: teal;
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        #box2{
+            background-color: darkorange;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+        #box22{
+            background-color: crimson;
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inline Elements -->
+    <a href="">Clarusway</a>
+    <button>Clarusway</button>
+    <span>Hello my name is span</span>
+    <!-- Block Elements -->
+
+    <div class="box">div1</div>
+    <div class="box" id="box2" onclick="this.style.visibility='hidden'" >hidden</div>
+    <div class="box">div3</div>
+    
+    <br><br>
+    <div class="box">div1</div>
+    <div class="box" id="box22" onclick="this.style.display='none'" >none</div>
+    <div class="box">div3</div>
+</body>
+
+</html>
