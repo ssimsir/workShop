@@ -1,0 +1,139 @@
+
+@import './themes.css';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--ff-roboto);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+nav section img{
+    width: 200px;
+}
+
+.nav-section-btn{
+}
+
+button{
+    border: 2px solid var(--red-dark);
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+    box-shadow: var(--shadow-light);
+    font-family: var(--ff-yeon);
+    margin: 1rem 0.5rem;
+    white-space: nowrap;
+    font-size: var(--fs-lg);    
+
+}
+.nav-section-btn button:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.button-dark{
+    background-color: var(--red-dark);
+    color: var(--white);
+}
+
+.button-light{
+    background-color: var(--white);
+    color: var(--red-dark);
+}
+
+
+header.hero{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: justify;
+}
+.header-section-text{
+    flex:2;
+}
+
+.header-section-text h1,p{
+    line-height: var(--line-h-xl);
+}
+
+
+.header-section-img{
+    flex:1;  
+}
+
+.header-section-img img{
+    width: 100%;
+    min-width: 300px;
+}
+
+main section{
+    display: flex;
+    align-items: center;
+    border: 20px;
+    box-shadow: var(--shadow-light);
+    margin: 2rem;
+}
+
+main section:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+main section article{
+    flex: 1;
+    padding: 1rem;
+
+}
+
+main section article img{
+    width: 100%;
+}
+
+
+/*! MEDİA SORGULARI */
+
+@media screen and (max-width:700px) {
+    nav{
+        flex-direction: column;
+    }
+    nav img{
+        width: 250px;
+    }
+
+    main section{
+        flex-direction: column;
+    }
+    main section:nth-child(even){
+        flex-direction:column;
+    }
+    header.hero{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .nav-section-btn{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-section-btn button{
+        width: 250px;
+        margin: 0.75rem;
+        font-size: var(--fs-md);
+    }
+}
