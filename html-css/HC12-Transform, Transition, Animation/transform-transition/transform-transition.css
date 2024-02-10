@@ -1,0 +1,66 @@
+
+
+.yazi{
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 50vw;
+}
+
+
+.yazi1{
+    background-color: darkcyan;
+    transform: rotateX(180deg);
+}
+
+.yazi2{
+ background-color: chocolate;
+ transform: rotateY(120deg);
+}
+
+.yazi3{
+    background-color: cornflowerblue;
+    transform: rotate(30deg);
+    transform-origin: left;  /*dönme noktasını belirtir*/
+
+}
+
+.yazi4{
+    background-color: fuchsia;
+    transform: scaleX(1.5);
+
+}
+
+.yazi5{
+    background-color: olive;
+    transform:scaleY(1.5)
+
+}
+
+.yazi6{
+    background-color: darkgoldenrod;
+}
+
+.yazi6:active{
+    background-color: darkgoldenrod;
+    transform: scale(3);
+}
+
+
+
+/*Transform Translate*/
+
+.box{
+    background-color: crimson;
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+}
+.x{
+    transform: translateX(150px);
+}
+
+.y{
+    background-color: magenta;
+    transform:translateY(120px)
+}

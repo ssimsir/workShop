@@ -1,0 +1,44 @@
+
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 250px 1fr 4fr 1fr;
+}
+
+header{
+    background-color: seagreen;
+    grid-column: span 12;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav{
+    background-color: orange;
+    background-color: span 12;
+
+}
+
+aside{
+    background-color: blueviolet;
+    grid-column: span 3;
+    display: grid;
+    place-items: center;
+}
+
+main{
+background-color: seagreen;
+grid-column: span 9;
+}
+
+footer{
+    background-color: fuchsia;
+    grid-column: span 12;
+
+}
