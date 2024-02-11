@@ -1,0 +1,83 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    margin: 30px auto;
+    width: 80%;
+    border: 2px solid black;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 70px;
+}
+
+nav img:hover{
+    animation-name: turnImg;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    
+}
+
+@keyframes turnImg {
+    0% {
+        transform: rotate(90deg) scale(.75);
+        transform-origin: center;
+
+        /* transform: rotate(360deg) scale(.9); */
+      }
+
+      25% {
+        transform: rotate(180deg) scale(.85);
+        transform-origin: center;
+      }
+      50% {
+        transform: rotate(270deg) scale(1);
+        transform-origin: center;
+      }
+
+      100% {
+        transform: rotate(360deg) scale(1.25);
+        transform-origin: center;
+        position: relative;
+        z-index: 2;
+      }
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+nav ul li {
+    padding: 0 10px ;
+    margin: 10px;
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul li:hover {
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes colorChange {
+    
+}
+
