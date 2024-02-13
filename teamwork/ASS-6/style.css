@@ -9,7 +9,6 @@
 
     margin: 30px auto;
     width: 80%;
-    border: 2px solid black;
     justify-content: center;
 }
 
@@ -67,17 +66,100 @@ nav ul {
 nav ul li {
     padding: 0 10px ;
     margin: 10px;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
     font-size: 18px;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    display: inline-block;
 }
 
-nav ul li:hover {
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Çizginin yazının altında kalması için */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: purple;
+    transform-origin: center;
+    transform: scaleX(0); /* Başlangıçta çizgiyi sıfıra küçült */
+    transition: transform 0.3s ease; /* Geçiş efekti için */
+  }
+  
+  nav ul li:hover::after {
+    transform: scaleX(1); /* Fare üzerine gelindiğinde çizgiyi tam boyutuna büyüt */
+  }
+
+main {
+    margin-top: 2rem    ;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 50rem 1fr;
+    grid-template-rows: 1fr 10rem 1fr;
 }
 
-@keyframes colorChange {
-    
+main img{
+    width: 100%;
+    height: 100%;
+    animation: smallBig 2s linear 1s 4 alternate forwards;
 }
 
+
+main .fs{   
+    grid-column :1/2 ;
+    grid-row: 1/2;
+}
+main .aws{
+    grid-column:3/4 ;
+    grid-row: 1/2;
+}
+main .datascience{
+    grid-column:1/2 ;
+    grid-row: 3/4;
+}
+main .sdet{
+    grid-column:3/4 ;
+    grid-row: 3/4;
+}
+
+main .clarusway{
+    grid-column:2/3 ;
+    grid-row: 1/4;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: #8A1C4A;
+    animation: updown 2s linear 1s 4 alternate both;
+}
+
+@keyframes updown{
+    0%{
+        transform: translate(0);
+    }
+    100% {
+        transform: translateY(90%);
+      }
+}
+
+@keyframes smallBig {
+    0% {
+      transform: scale(1); 
+    }
+    25% {
+        transform: scale(1.25); 
+      }
+      50% {
+        transform: scale(1); 
+      }
+      75% {
+        transform: scale(.75); 
+      }
+  
+
+    100% {
+        transform: scale(1); ;
+    }
+  }
