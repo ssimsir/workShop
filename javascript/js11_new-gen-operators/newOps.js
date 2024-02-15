@@ -120,7 +120,6 @@ const printDate = (data) => {
 }
 
 const printDateDestr = ({id, desc, createdTime}) => {
-  const {id, desc, createdTime} =data;
   console.log(` ${id} - ${desc} - ${createdTime}`)
 }
 
@@ -159,3 +158,56 @@ printDateDestrAir(data)
 //* =============================================
 //*  SPREAD (...)
 //* =============================================
+
+//* =============================================
+//*  SPREAD (...)
+//* =============================================
+
+//? Spread operatoru ise iterables olan bir elemani bireysel
+//? degerler haline getirir.
+
+const ucanAraclar = ["helicopter", "drone", "ucak", "fuze"]
+const karaAracları = ["araba", "bisiklet", "marti"]
+
+const tasitlar = [ucanAraclar, karaAracları]
+console.log(tasitlar)
+const tasitlarFlat = [...ucanAraclar, ...karaAracları]
+console.log(tasitlarFlat)
+
+const cumle="uzun ince bir yoldayım"
+const cumleDizi = cumle.split("")
+console.log(cumleDizi)
+
+
+const numbers = [1, 3, 5, 7, 9]
+console.log(Math.max(...numbers))
+
+
+
+//? nested
+const sahislar = {
+  sahis1: {
+    name: "Can",
+    surname: "Canan",
+    dob: "1990",
+    job: "developer",
+    salary: "140000",
+    drivingLicense: true,
+  },
+  sahis2: {
+    name: "John",
+    surname: "Sweet",
+    dob: "1990",
+    job: "tester",
+    salary: "110000",
+    drivingLicense: false,
+  },
+  sahis3: {
+    name: "Steve",
+    surname: "Job",
+    dob: "2000",
+    job: "developer",
+    salary: "90000",
+    drivingLicense: true,
+  },
+}
