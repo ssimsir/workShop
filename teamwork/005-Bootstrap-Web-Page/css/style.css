@@ -1,0 +1,59 @@
+:root{
+    --nav-color:white;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   NAVBAR                                   */
+/* -------------------------------------------------------------------------- */
+.navbar{
+    position: fixed;
+    z-index: 5; 
+    width: 100%;
+}
+
+.container-fluid{
+    padding: .5rem 5rem;
+}
+
+.nav-link, .navbar-brand{
+    color:var(--nav-color) !important; 
+}
+
+.navbar-toggler{
+    background-color: var(--nav-color);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  CAROUSEL                                  */
+/* -------------------------------------------------------------------------- */
+
+.carousel-item{
+    height: 100vh;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    color: blueviolet;
+}
+
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    color: #fff;
+    background-color: #dc3545;
+  }
+  
+  .circle i {
+    position: relative;
+    top: 30px;
+  }
+  
+  
