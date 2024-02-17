@@ -1,0 +1,93 @@
+:root{
+    --primary-color: #bc6c25;
+    --secondary-color:#4d3822;
+    --hover-color:#e76f51
+
+}
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.navbar{
+    background-color: transparent !important;
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+  
+.navbar .container{
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.navbar-nav{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: white !important;
+}
+.nav-link:hover{
+    color: var(--hover-color) !important;
+}
+
+
+/* Caroucell */
+
+.carousel-item{
+    height: 100vh;
+}
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    bottom: 40%;
+}
+
+.carousel-caption .btn{
+    background-color: #bc6c25;
+    border: none;
+    width: 10rem;
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+}
+
+.carousel-caption .btn:first-child{
+    background-color: transparent;
+}
+
+.hero{
+   
+    position: relative;
+    z-index: 3;
+}
+.black{
+    width: 350px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.800);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: 2;
+}
+
+.carousel-indicators{
+    gap: .7rem !important;
+}
+
+.carousel-indicators button{
+    background-color: var(--primary-color) !important;
+    padding: 0.1rem !important;  
+    width: 3rem !important;  
+}
+
+section#about{
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
