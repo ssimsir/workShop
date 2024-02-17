@@ -87,7 +87,34 @@
     width: 3rem !important;  
 }
 
+/* ABOUT */
+
+
 section#about{
-    height: 100vh;
     background-color: var(--secondary-color);
+}
+.image-container{
+    position: relative;
+}
+.image-container img{
+    width:100%;
+}
+
+.about-image-info{
+    
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.5),
+        rgba(188, 108, 37, 1)
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section#about button{
+    background-color: var(--primary-color);
+    border: none;
 }
