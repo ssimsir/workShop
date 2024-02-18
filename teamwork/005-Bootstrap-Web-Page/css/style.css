@@ -1,59 +1,166 @@
-:root{
-    --nav-color:white;
+:root {
+  --nav-color: white;
+  --bs-primary-rgb: 26, 188, 156;
+  --bs-secondary-rgb: 44, 62, 80;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+
+  --bs-link-color: #1abc9c;
+  --bs-link-hover-color: #15967d;
+
+  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              BACKGROUND-COLOR                              */
+/* -------------------------------------------------------------------------- */
+.bg-primary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--bs-primary-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+
+.bg-secondary {
+  --bs-bg-opacity: 1;
+  background-color: rgba(
+    var(--bs-secondary-rgb),
+    var(--bs-bg-opacity)
+  ) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 TEXT-COLOR                                 */
+/* -------------------------------------------------------------------------- */
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-secondary {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-dark {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               TEXT-TRANSFORM                               */
+/* -------------------------------------------------------------------------- */
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               TEXT-DECORATION                              */
+/* -------------------------------------------------------------------------- */
+.text-decoration-underline {
+  text-decoration: underline !important;
 }
 
 /* -------------------------------------------------------------------------- */
 /*                                   NAVBAR                                   */
 /* -------------------------------------------------------------------------- */
-.navbar{
-    position: fixed;
-    z-index: 5; 
-    width: 100%;
+
+.navbar-brand,
+.nav-item a {
+  color: white;
 }
 
-.container-fluid{
-    padding: .5rem 5rem;
+.nav-item a:hover {
+  color: orange;
+  text-decoration: underline;
 }
-
-.nav-link, .navbar-brand{
-    color:var(--nav-color) !important; 
-}
-
-.navbar-toggler{
-    background-color: var(--nav-color);
-}
-
 
 /* -------------------------------------------------------------------------- */
 /*                                  CAROUSEL                                  */
 /* -------------------------------------------------------------------------- */
 
-.carousel-item{
-    height: 100vh;
+.carousel-item {
+  height: 100vh;
 }
 
-.carousel-item img{
-    height: 100%;
-    object-fit: cover;
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
 }
 
-.carousel-caption{
-    color: blueviolet;
+.carousel-caption {
+  color: blueviolet;
 }
 
 .circle {
-    display: inline-block;
-    border-radius: 50%;
-    width: 150px;
-    margin: auto;
-    height: 150px;
-    color: #fff;
-    background-color: #dc3545;
-  }
-  
-  .circle i {
-    position: relative;
-    top: 30px;
-  }
-  
-  
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.circle i {
+  position: relative;
+  top: 30px;
+}
+
+.col {
+  margin: 2rem 1rem;
+}
+
+.aboutus img {
+  height: 100%;
+}
+
+.client img {
+  width: 100%;
+  height: auto;
+  max-height: 50px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  ABOUT US                                  */
+/* -------------------------------------------------------------------------- */
+
+.aboutus img{
+    height: auto;
+    max-height: 20rem;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 CONTACT US                                 */
+/* -------------------------------------------------------------------------- */
+
+.contactus {
+  background: url("../img/back.jpg") no-repeat center center !important;
+  background-size: cover;
+  padding-bottom: 20%;
+  padding-top: 20%;
+  color: #eee;
+}
