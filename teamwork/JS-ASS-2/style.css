@@ -5,6 +5,7 @@
 
 .bgDiv {
   display: flex;
+  background-color: blanchedalmond;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -61,6 +62,9 @@
     }
     .btn-over {
       background-color: darkgreen;
+    }
+    .btn-out {
+      background-color: magenta;
     }
   }
 }
