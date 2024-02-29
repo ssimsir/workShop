@@ -188,6 +188,9 @@ const canvas = document.getElementById("picture");
 const takepicbotton = document.querySelector("a");
 const startwebcam = document.querySelector(".startWebCam");
 
+ 
+const arkaKameraButton = document.getElementById("arkaKamera");
+
 const webcam = new Webcam(video, "enviroment", canvas);
 
 webcam.facingMode="enviroment";
@@ -199,4 +202,9 @@ startwebcam.addEventListener("click", ()=>{
 takepicbotton.addEventListener("click", () => {
     let picture = webcam.snap();
     takepicbotton.href=picture;
+})
+
+arkaKameraButton.addEventListener("click", () => {
+    webcam.flip();
+    webcam.start();  
 })
