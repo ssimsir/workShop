@@ -185,7 +185,7 @@ class Webcam {
 
 const video = document.getElementById("video");
 const canvas = document.getElementById("picture");
-const takepicbotton = document.getElementById("pictureA");
+const takepicbotton = document.querySelector("a");
 
 const kameraAcButton = document.getElementById("kameraAc");
 const kameraDegistirButton = document.getElementById("kameraDegistir");
@@ -203,7 +203,14 @@ takepicbotton.addEventListener("click", () => {
 
 kameraAcButton.addEventListener("click", () => {
 
-    webcam.start();
+    webcam.start().then(result =>{
+      console.log("webcam started");
+      alert(webcam.getUserMedia);
+      
+   })
+   .catch(err => {
+       console.log(err);
+   });
 })
 
 kameraDegistirButton.addEventListener("click", () => {  
