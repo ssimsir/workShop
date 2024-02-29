@@ -186,14 +186,13 @@ class Webcam {
 const video = document.getElementById("video");
 const canvas = document.getElementById("picture");
 const takepicbotton = document.querySelector("a");
-const startwebcam = document.querySelector(".startWebCam");
 
- 
+
+
+const startwebcam = document.getElementById("onKamera");
 const arkaKameraButton = document.getElementById("arkaKamera");
 
-const webcam = new Webcam(video, "enviroment", canvas);
-
-webcam.facingMode="enviroment";
+const webcam = new Webcam(video, "user", canvas);
 
 startwebcam.addEventListener("click", ()=>{
     webcam.start();
