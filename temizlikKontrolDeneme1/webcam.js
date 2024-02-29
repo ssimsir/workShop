@@ -187,6 +187,7 @@ const video = document.getElementById("video");
 const canvas = document.getElementById("picture");
 const takepicbotton = document.querySelector("a");
 const startwebcam = document.querySelector(".startWebCam");
+
 const webcam = new Webcam(video, "enviroment", canvas);
 
 startwebcam.addEventListener("click", ()=>{
