@@ -189,21 +189,31 @@ const takepicbotton = document.querySelector("a");
 
 
 
-const startwebcam = document.getElementById("onKamera");
+//const startwebcam = document.getElementById("onKamera");
 const arkaKameraButton = document.getElementById("arkaKamera");
 
 const webcam = new Webcam(video, "user", canvas);
 
-startwebcam.addEventListener("click", ()=>{
-    webcam.start();
-})
+// startwebcam.addEventListener("click", ()=>{
+//     webcam.start();
+// })
 
 takepicbotton.addEventListener("click", () => {
     let picture = webcam.snap();
     takepicbotton.href=picture;
 })
 
-arkaKameraButton.addEventListener("click", () => {
-    webcam.flip();
-    webcam.start();  
+arkaKameraButton.addEventListener("click", () => {  
+
+
+    if (webcam.facingMode === "user"){
+        webcam.flip();
+        webcam.start();
+        alert("user")
+    } else  if (webcam.facingMode === "enviroment"){
+        webcam.flip();
+        webcam.start();
+        alert("enviroment")
+    }
+  
 })
