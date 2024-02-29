@@ -210,6 +210,7 @@ kameraAcButton.addEventListener("click", () => {
    })
    .catch(err => {
        console.log(err);
+       alert("hata")
    });
 })
 
