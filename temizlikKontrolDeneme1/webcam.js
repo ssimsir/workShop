@@ -207,13 +207,15 @@ arkaKameraButton.addEventListener("click", () => {
 
 
     if (webcam.facingMode === "user"){
-        webcam.flip();
-        webcam.start();
         alert("user")
-    } else  if (webcam.facingMode === "enviroment"){
         webcam.flip();
         webcam.start();
+        
+    } else  if (webcam.facingMode === "enviroment"){
         alert("enviroment")
+        webcam.flip();
+        webcam.start();
+        
     }
   
 })
