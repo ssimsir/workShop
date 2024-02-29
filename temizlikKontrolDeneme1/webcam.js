@@ -190,6 +190,8 @@ const startwebcam = document.querySelector(".startWebCam");
 
 const webcam = new Webcam(video, "enviroment", canvas);
 
+webcam.facingMode="enviroment";
+
 startwebcam.addEventListener("click", ()=>{
     webcam.start();
 })
