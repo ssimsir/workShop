@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a, .startWebCam {
+    padding: .5rem 2rem;
+    background-color: orange;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    list-style: none;
+    text-decoration: none;
+}
+
+canvas{
+    
+}
