@@ -185,37 +185,33 @@ class Webcam {
 
 const video = document.getElementById("video");
 const canvas = document.getElementById("picture");
-const takepicbotton = document.querySelector("a");
+const takepicbotton = document.getElementById("pictureA");
+
+const kameraAcButton = document.getElementById("kameraAc");
+const kameraDegistirButton = document.getElementById("kameraDegistir");
 
 
-
-//const startwebcam = document.getElementById("onKamera");
-const arkaKameraButton = document.getElementById("arkaKamera");
 
 const webcam = new Webcam(video, "user", canvas);
 
-// startwebcam.addEventListener("click", ()=>{
-//     webcam.start();
-// })
 
 takepicbotton.addEventListener("click", () => {
     let picture = webcam.snap();
     takepicbotton.href=picture;
 })
 
-arkaKameraButton.addEventListener("click", () => {  
+
+kameraAcButton.addEventListener("click", () => {
+
+    webcam.start();
+})
+
+kameraDegistirButton.addEventListener("click", () => {  
 
 
-    if (webcam.facingMode === "user"){
-        alert("user")
         webcam.flip();
         webcam.start();
         
-    } else  if (webcam.facingMode === "enviroment"){
-        alert("enviroment")
-        webcam.flip();
-        webcam.start();
-        
-    }
+
   
 })
