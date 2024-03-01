@@ -205,6 +205,30 @@ class Webcam {
 }
 
 
+
+//kodlar burdan başlıyor
+
+
+function resizedataURL(datas, wantedWidth, wantedHeight){
+
+    var img = document.createElement('img');
+    img.onload = function(){
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        canvas.width = wantedWidth;
+        canvas.height = wantedHeight;
+        ctx.drawImage(this, 0, 0, wantedWidth, wantedHeight);
+        var dataURI = canvas.toDataURL();
+        return dataURI;
+    };
+    img.src = datas;
+
+    imageDiv.appendChild(img);
+}
+
+
+
+
 let webcamStarted = false;
 const webcamElement = document.getElementById('webcam');
 const canvasElement = document.getElementById('canvas');
@@ -220,8 +244,13 @@ const kameraDegistirButton = document.getElementById("kameraDegistir");
 
 takepicbotton.addEventListener("click", () => {
   let picture = webcam.snap();
-  console.log(picture)
-  takepicbotton.href = picture;
+  //console.log(picture)
+  //takepicbotton.href = picture;
+
+  takepicbotton.href = resizedataURL(picture, 50, 50);
+
+  
+
 });
 
 kameraAcButton.addEventListener("click", () => {
@@ -249,20 +278,3 @@ kameraDegistirButton.addEventListener("click", () => {
 
 
 
-function resizedataURL(datas, wantedWidth, wantedHeight){
-
-    var img = document.createElement('img');
-    img.onload = function(){
-        var canvas = document.createElement('canvas');
-        var ctx = canvas.getContext('2d');
-        canvas.width = wantedWidth;
-        canvas.height = wantedHeight;
-        ctx.drawImage(this, 0, 0, wantedWidth, wantedHeight);
-        var dataURI = canvas.toDataURL();
-        return dataURI;
-    };
-    img.src = datas;
-
-
-}
-//resizedataURL('yourDataURIHere', 50, 50);
