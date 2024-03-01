@@ -212,6 +212,8 @@ const snapSoundElement = document.getElementById('snapSound');
 const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
 
 
+const imageDiv = document.getElementById('imageDiv');
+
 const takepicbotton = document.querySelector("a");
 const kameraAcButton = document.getElementById("kameraAc");
 const kameraDegistirButton = document.getElementById("kameraDegistir");
@@ -228,6 +230,8 @@ kameraAcButton.addEventListener("click", () => {
     .then((result) => {
       webcamStarted = true;
       console.log("webcam started");
+      webcam.flip();
+      webcam.start();
     })
     .catch((err) => {
       console.log(err);
@@ -240,4 +244,25 @@ kameraDegistirButton.addEventListener("click", () => {
         webcam.start();
     }
 
+    
 });
+
+
+
+function resizedataURL(datas, wantedWidth, wantedHeight){
+
+    var img = document.createElement('img');
+    img.onload = function(){
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        canvas.width = wantedWidth;
+        canvas.height = wantedHeight;
+        ctx.drawImage(this, 0, 0, wantedWidth, wantedHeight);
+        var dataURI = canvas.toDataURL();
+        return dataURI;
+    };
+    img.src = datas;
+
+
+}
+//resizedataURL('yourDataURIHere', 50, 50);
