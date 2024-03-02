@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
-    <div class="main">
-        <div class="tablo"></div>
-
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box header" id="header"></div>
+      <div class="box sidebar" id="sidebar">
+        <button onclick="kitaplariListele()">Kitapları Listele</button>
+        <button onclick="yeniKitapEkle()">Yeni Kitap Ekle</button>
+        <button onclick="kitapAl()">Kitap Al</button>
+        <button onclick="kitapIadeEt()">Kitap İade Et</button>
+        <button>Yazara Göre Kitap Listele</button>
+      </div>
+      <div class="box content" id="content"><div id="kitaplar"></div></div>
+      <div class="box footer" id="footer"><div class="kaydet"></div></div>
     </div>
 
-
-    <script src="./app.js"></script>
-</body>
+    <script src="./app1.js"></script>
+    <script src="./app2.js"></script>
+    <script src="./app3.js"></script>
+    <script src="./app4.js"></script>
+  </body>
 </html>
