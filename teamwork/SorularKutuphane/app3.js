@@ -46,8 +46,8 @@ kitapEkle = (bindElement) => {
     yeniKitap.ad = adInput.value;
     yeniKitap.yazar = yazarInput.value;
     yeniKitap.tur = turInput.value;
-    yeniKitap.kopyaSayisi = kopyaSayisiInput.value;
-
+    yeniKitap.kopyaSayisi = Number(kopyaSayisiInput.value);
+    console.log(yeniKitap)
     kitaplar.push(yeniKitap);
     alert("kitap kaydı yapıldı")
     adInput.value = "";

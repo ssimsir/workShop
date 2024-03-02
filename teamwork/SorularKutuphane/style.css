@@ -38,10 +38,23 @@ body {
     color: #fff;
     border-radius: 5px;
     padding: 50px;
-    font-size: 150%;
+    font-size: 120%;
   }
   
   .header,
   .footer {
     background-color: #999;
+  }
+
+  ul{
+    background-color: brown;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 15px;
+    list-style: none;
+
+  }
+
+  li{
+    background-color: #444;
   }
