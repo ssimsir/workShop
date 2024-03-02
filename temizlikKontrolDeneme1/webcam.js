@@ -204,54 +204,27 @@ class Webcam {
   }
 }
 
-
-
 //kodlar burdan başlıyor
-
-
-function resizedataURL(datas, wantedWidth, wantedHeight){
-
-    var img = document.createElement('img');
-    img.onload = function(){
-        var canvas = document.createElement('canvas');
-        var ctx = canvas.getContext('2d');
-        canvas.width = wantedWidth;
-        canvas.height = wantedHeight;
-        ctx.drawImage(this, 0, 0, wantedWidth, wantedHeight);
-        var dataURI = canvas.toDataURL();
-        return dataURI;
-    };
-    img.src = datas;
-
-    imageDiv.appendChild(img);
-}
-
+//https://bensonruan.com/how-to-access-webcam-and-take-photo-with-javascript/#webcam-easyjs_demo
+//https://unpkg.com/browse/html5-qrcode@2.0.9/README.md
 
 
 
 let webcamStarted = false;
-const webcamElement = document.getElementById('webcam');
-const canvasElement = document.getElementById('canvas');
-const snapSoundElement = document.getElementById('snapSound');
-const webcam = new Webcam(webcamElement, 'user', canvasElement, snapSoundElement);
+const webcamElement = document.getElementById("webcam");
+const canvasElement = document.getElementById("canvas");
+const snapSoundElement = document.getElementById("snapSound");
+const webcam = new Webcam(
+  webcamElement,
+  "user",
+  canvasElement,
+  snapSoundElement
+);
 
+const imageDiv = document.getElementById("imageDiv");
 
-const imageDiv = document.getElementById('imageDiv');
-
-const takepicbotton = document.querySelector("a");
 const kameraAcButton = document.getElementById("kameraAc");
 const kameraDegistirButton = document.getElementById("kameraDegistir");
-
-takepicbotton.addEventListener("click", () => {
-  let picture = webcam.snap();
-  //console.log(picture)
-  //takepicbotton.href = picture;
-
-  takepicbotton.href = resizedataURL(picture, 50, 50);
-
-  
-
-});
 
 kameraAcButton.addEventListener("click", () => {
   webcam
@@ -268,13 +241,96 @@ kameraAcButton.addEventListener("click", () => {
 });
 
 kameraDegistirButton.addEventListener("click", () => {
-    if (webcamStarted){
-        webcam.flip();
-        webcam.start();
-    }
-
-    
+  if (webcamStarted) {
+    webcam.flip();
+    webcam.start();
+  }
 });
 
+//resimi input file aktarıyoruz
 
 
+// function loadURLToInputFiled(fileName, imgBlob){
+
+//     // Load img blob to input
+//     // WIP: UTF8 character error
+   
+//     let file = new File([imgBlob], fileName,{type:"image/png", lastModified:new Date().getTime()}, 'utf-8');
+//     let container = new DataTransfer(); 
+//     container.items.add(file);
+//     document.querySelector('#file').files = container.files;
+    
+
+// }
+//----
+// Api ile formu gönderme
+//-----
+
+
+
+function resizedataURL(datas, wantedWidth, wantedHeight) {
+  const img = document.createElement("img");
+  img.onload = function () {
+    var canvas = document.createElement("canvas");
+    var ctx = canvas.getContext("2d");
+    canvas.width = wantedWidth;
+    canvas.height = wantedHeight;
+    ctx.drawImage(this, 0, 0, wantedWidth, wantedHeight);
+    var dataURI = canvas.toDataURL();
+    return dataURI;
+  };
+  img.src = datas;
+
+  imageDiv.appendChild(img);
+}
+
+
+const apiUrl = "http://localhost:8080/file/upload";
+const contactForm = document.getElementById("contact-form");
+const responseMessage = document.getElementById("response-message");
+
+contactForm.addEventListener("submit", function (event) {
+
+
+  event.preventDefault();
+
+
+  let picture = webcam.snap();
+  //resizedataURL(picture, 50, 50);
+
+
+  //var imageSrc = document.getElementById('imagePreview').src;
+  var blob = fetch(picture)
+      .then(res => res.blob())
+      .then(blob => {
+          var file = new File([blob], 'resim.png', { type: 'image/png' });
+          var fileInput = document.getElementById('file');
+          fileInput.files = [file];
+          fileInput.dispatchEvent(new Event('change'));
+      })
+      .catch(err => console.error(err));
+
+
+  const formData = new FormData(contactForm);
+
+  console.log(formData)
+  const requestOptions = {
+    method: "POST",
+    body: formData,
+  };
+
+  fetch(apiUrl, requestOptions)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then((data) => {
+      responseMessage.textContent = data;
+    })
+    .catch((error) => {
+      alert(error)
+      console.error("Error:", error);
+    });
+});
