@@ -30,16 +30,34 @@ const urunler =  [
 
   sepet=[];
   sepeteEkle = (urunId, miktar) => {
-    urunler.map(urun=>{
+    urunler.map((urun)=>{
         if (urun.id === urunId) {
-            sepet.push({id:urun.id, ad:urun.ad, marka:urun.marka, model:urun.model, renk:urun.renk, fiyat:urun.fiyat, stok:miktar})
+            sepet.push({id:urun.id, ad:urun.ad, marka:urun.marka, model:urun.model, renk:urun.renk, fiyat:urun.fiyat, miktar:miktar})
             urun.stok -= miktar
         }
     })
   }
 
   sepeteEkle(1, 2)
+  sepeteEkle(2, 2)
   console.log(sepet)
   console.log(urunler)
 
-  
+
+
+  sepettenCikar = (urunId) => {
+    sepet.map((sepetUrun, i) => {
+        if (sepetUrun.id === urunId){
+            sepet.splice(i, i+1)
+
+            urunler.map(urun => {
+                if (urun.id===urunId) urun.stok += sepetUrun.miktar;
+            })
+        } 
+    } )
+  }
+
+  sepettenCikar(1)
+  console.log(sepet)
+  console.log(urunler)
+
