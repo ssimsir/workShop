@@ -19,7 +19,7 @@ kitapEkle = (bindElement) => {
   const yazarDiv = document.createElement("div");
   yazarDiv.classList.add("mb-3")
   const yazarLabel = document.createElement("label");
-  yazarLabel.textContent = "Yazar  :";
+  yazarLabel.textContent = "Yazar";
   yazarLabel.setAttribute("for", "yazarInput");
   yazarLabel.classList.add("form-label");
   const yazarInput = document.createElement("input");
@@ -33,7 +33,7 @@ kitapEkle = (bindElement) => {
   const turDiv = document.createElement("div");
   turDiv.classList.add("mb-3")
   const turLabel = document.createElement("label");
-  turLabel.textContent = "Kitap Türü  :";
+  turLabel.textContent = "Kitap Türü";
   turLabel.setAttribute("for", "turInput");
   turLabel.classList.add("form-label");
   const turInput = document.createElement("input");
@@ -47,7 +47,7 @@ kitapEkle = (bindElement) => {
   const kopyaSayisiDiv = document.createElement("div");
   kopyaSayisiDiv.classList.add("mb-3")
   const kopyaSayisiLabel = document.createElement("label");
-  kopyaSayisiLabel.textContent = "Kopya Sayısı  :";
+  kopyaSayisiLabel.textContent = "Kopya Sayısı";
   kopyaSayisiLabel.setAttribute("for", "kopyaSayisiInput");
   kopyaSayisiLabel.classList.add("form-label");
   const kopyaSayisiInput = document.createElement("input");
