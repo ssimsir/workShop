@@ -26,7 +26,6 @@
     grid-area: content;
     position: relative;
     height: 100%;
-    overflow: scroll;
   }
   
   .header {
@@ -66,17 +65,15 @@
   }
 
   ul{
-    background-color: brown;
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 15px;
-    list-style: none;
+    background-color: #5C636A;
+
 
   }
 
   li{
-    background-color: #444;
-  }
+    background-color: #444 !important;
+    color: #fff !important;
+  } 
 
   td, th{
     border:1px solid white;

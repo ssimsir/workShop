@@ -11,9 +11,11 @@ yazarKitapListele = (bindElement) =>{
       const listElement = document.createElement("div");
       for (let yazar in groupKitapYazar) {
         let listgroup = document.createElement("ul");
+        listgroup.classList.add("list-group", "list-group-flush")
         listgroup.textContent = yazar;
         groupKitapYazar[yazar].forEach(function (kitap) {
           let listion = document.createElement("li");
+          listion.classList.add("list-group-item")
           listion.textContent = kitap.ad;
           listgroup.appendChild(listion);
         });

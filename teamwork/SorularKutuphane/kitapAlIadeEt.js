@@ -1,12 +1,13 @@
 kutuphandenKitapAlIadeEt = (bindElement, durum) => {
   const mainDiv = document.createElement("div");
-
+  mainDiv.style.width="500px";
   let groupKitapTur = kitaplar.reduce((result, item) => {
     (result[item.tur] = result[item.tur] || []).push(item);
     return result;
   }, {});
 
   const selectElement = document.createElement("SELECT");
+  selectElement.classList.add("form-select")
   for (let tur in groupKitapTur) {
     let optgroup = document.createElement("optgroup");
     optgroup.label = tur;
@@ -20,6 +21,7 @@ kutuphandenKitapAlIadeEt = (bindElement, durum) => {
   mainDiv.appendChild(selectElement);
 
   kaydetButton = document.createElement("button");
+  kaydetButton.classList.add("btn", "btn-secondary", "m-3")
   durum === 1
     ? (kaydetButton.textContent = "Kitabı Al")
     : (kaydetButton.textContent = "Kitabı İade Et");
