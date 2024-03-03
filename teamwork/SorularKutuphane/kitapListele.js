@@ -1,5 +1,9 @@
 tablodaGoster = (kitaplarObject, bindElement) => {
   tablo = document.createElement("table");
+
+  tablo.classList.add("table", "table-striped");
+
+
   //TABLO HEADER
   const tabloBaslik = tablo.createTHead();
   const tabloBaslikRow = tabloBaslik.insertRow();
