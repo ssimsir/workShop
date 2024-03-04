@@ -1,0 +1,13 @@
+body {
+  background-color: teal;
+}
+
+div {
+  background-color: orange;
+}
+div h1 {
+  background-color: magenta;
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
