@@ -56,8 +56,9 @@ harcamaFormu.addEventListener("submit",(e)=>{
 
     // console.log(yeniHarcama)
     harcamaListesi.push(yeniHarcama)
-    console.log(harcamaListesi)
+    // console.log(harcamaListesi)
     localStorage.setItem("harcamalar", JSON.stringify(harcamaListesi))
+    harcamayiDomaYaz(yeniHarcama)
 
     harcamaFormu.reset()
     tarihInput.valueAsDate = new Date()
@@ -65,6 +66,50 @@ harcamaFormu.addEventListener("submit",(e)=>{
 
 })
 
-harcamayiDomaYaz = () => {
+
+const harcamayiDomaYaz = ({id, miktar, tarih, alan}) =>{
+
+    // const {id, miktar, tarih, alan} = yeniHarcama
+    // console.log(id, miktar, tarih, alan)
+ 
+    //! 1. yöntem
+    // harcamaBody.innerHTML += `
+    //     <tr>
+    //         <td>${tarih}</td>
+    //         <td>${alan}</td>
+    //         <td>${miktar}</td>
+    //         <td><i id=${id} class="fa-solid fa-trash-can text-danger"  type="button"></i></td>
+    //     </tr>
     
+    // `
+
+    //^ <h2>Hello World!</h2><p>Have a nice day!</p>
+    //^ <img src="https://5.imimg.com/data5/VK/EK/UG/SELLER-101818061/danger-signs-500x500.jpg">
+
+    //! 2. yöntem
+    const tr = document.createElement("tr")
+
+    const appendTd = (content)=>{
+        const td = document.createElement("td")
+        td.textContent = content;
+        return td
+    }
+
+    const createLastTd = () =>{
+        const td = document.createElement("td")
+        const iElement = document.createElement("i")
+        iElement.id = id
+        iElement.className = "fa-solid fa-trash-can text-danger"
+        iElement.type = "button"
+        td.appendChild(iElement)
+        return td
+    }
+
+    tr.append(
+        appendTd(tarih), //tarih td si
+        appendTd(alan), //alan td si
+        appendTd(miktar), //miktar td si
+        createLastTd() // Çöp kutusu ve id yi ekler
+    )
+    harcamaBody.append(tr)
 }
