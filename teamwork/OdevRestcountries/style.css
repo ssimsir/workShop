@@ -1,10 +1,28 @@
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .select-bar{
     width: 50rem;
-    padding: 5rem;
+    padding: 1rem;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     flex-direction: column;
+}
+
+main{
+    display: flex;
+    border: 1px solid red;
+}
+
+aside,article {
+    border: 1px solid orange;
+    width: 45rem;
+    height: 27.5rem;
+    padding: 2rem;
 }
