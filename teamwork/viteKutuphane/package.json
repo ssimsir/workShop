@@ -1,5 +1,5 @@
 {
-  "name": "js19-vite",
+  "name": "vitekutuphane",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,8 +10,5 @@
   },
   "devDependencies": {
     "vite": "^5.1.6"
-  },
-  "dependencies": {
-    "axios": "^1.6.7"
   }
 }
