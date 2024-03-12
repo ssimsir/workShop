@@ -1,7 +1,7 @@
 import {kitaplar} from './kitapObject'
 
 
-const setKitap = async (kitap) => {
+const saveKitap = async (kitap) => {
   try {
     const response = await fetch('http://localhost:3000/kitaplar', {
       method: 'POST',
@@ -97,7 +97,7 @@ const kitapEkle = (bindElement) => {
     kitaplar.push(yeniKitap);
 
 
-    setKitap(yeniKitap)
+    saveKitap(yeniKitap)
 
 
 

@@ -5,10 +5,10 @@ import {yeniKitapEkle} from './src/kitapEkle.js'
 import {kitapAl, kitapIadeEt} from './src/kitapAlIadeEt.js'
 import {yazaraGoreKitapListele} from './src/kitapYazarListele.js'
 
-import {getKitaplar} from './src/kitapObject.js'
+import {listKitap} from './src/kitapObject.js'
 
 window.addEventListener("load", () => {
-    getKitaplar()
+    listKitap()
   })
   
 

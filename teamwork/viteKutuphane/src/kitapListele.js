@@ -3,11 +3,23 @@ import { kitaplar } from './kitapObject'
 
 
 const deleteKitap = async (id) =>{
-  const response = await fetch(`http://localhost:3000/kitaplar/${id}`, {
-    method: 'DELETE',
-  } );
-  return "Veri slime işlemi başarılı";
-  // Burada very silindiği için bze dönen boş bir obje olacağı için kendimiz yazdırdık.
+
+  try {
+    const response = await fetch(`http://localhost:3000/kitaplar/${id}`, {
+      method: 'DELETE',
+    } );
+    console.log(response)
+    if (response.ok){
+      alert("Kitap Silindi")
+    } else {
+      throw new Error("silme başarısız")
+    }
+  } catch (error) {
+      console.log("hata", error)
+  }
+
+
+
 }
 
 
@@ -86,11 +98,12 @@ const tablodaGoster = (kitaplarObject, bindElement) => {
 
   tablo.addEventListener("click",(e)=>{
     if (e.target.classList.contains("fa-trash-can")) {
-      alert("tıklandı")
         e.target.parentElement.parentElement.remove()
         const id = e.target.id 
+        alert(e.target.id )
         kitaplarObject = kitaplarObject.filter((kitap)=> kitap.id != id)
         deleteKitap(id)
+        
     }
 
     
