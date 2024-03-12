@@ -1,10 +1,16 @@
-import "bootstrap"
 import './style.css'
 
 import {kitaplariListele} from './src/kitapListele.js'
 import {yeniKitapEkle} from './src/kitapEkle.js'
 import {kitapAl, kitapIadeEt} from './src/kitapAlIadeEt.js'
 import {yazaraGoreKitapListele} from './src/kitapYazarListele.js'
+
+import {getKitaplar} from './src/kitapObject.js'
+
+window.addEventListener("load", () => {
+    getKitaplar()
+  })
+  
 
 document.querySelector("#kitaplariListele").addEventListener("click", () => { kitaplariListele()})
 document.querySelector("#yeniKitapEkle").addEventListener("click", () => { yeniKitapEkle()})

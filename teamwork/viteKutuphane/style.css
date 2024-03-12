@@ -84,3 +84,6 @@ th{
 
 }
 
+i:hover {
+  cursor: pointer;
+}

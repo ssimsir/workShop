@@ -1,5 +1,26 @@
 import {kitaplar} from './kitapObject'
 
+
+const setKitap = async (kitap) => {
+  try {
+    const response = await fetch('http://localhost:3000/kitaplar', {
+      method: 'POST',
+      body: JSON.stringify(kitap),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+
+
+
+
 const kitapEkle = (bindElement) => {
   const mainDiv = document.createElement("div");
   mainDiv.style.width="500px";
@@ -71,9 +92,19 @@ const kitapEkle = (bindElement) => {
     yeniKitap.ad = adInput.value;
     yeniKitap.yazar = yazarInput.value;
     yeniKitap.tur = turInput.value;
-    yeniKitap.kopyaSayisi = Number(kopyaSayisiInput.value);
+    yeniKitap.kopya_sayisi = Number(kopyaSayisiInput.value);
     console.log(yeniKitap)
     kitaplar.push(yeniKitap);
+
+
+    setKitap(yeniKitap)
+
+
+
+
+
+
+
     alert("kitap kaydı yapıldı")
     adInput.value = "";
     yazarInput.value = "";
