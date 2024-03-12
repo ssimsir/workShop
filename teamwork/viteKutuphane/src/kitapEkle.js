@@ -86,6 +86,6 @@ const kitapEkle = (bindElement) => {
 };
 
 export const yeniKitapEkle = () => {
-  document.querySelector("#content").firstElementChild.remove();
+  document.querySelector("#content").innerHTML=""  //firstElementChild.remove();
   kitapEkle("#content");
 };

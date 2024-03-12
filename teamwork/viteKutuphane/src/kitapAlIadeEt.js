@@ -52,11 +52,11 @@ const kutuphandenKitapAlIadeEt = (bindElement, durum) => {
 };
 
 export const kitapAl = () => {
-  document.querySelector("#content").firstElementChild.remove();
+  document.querySelector("#content").innerHTML="" //firstElementChild.remove();
   kutuphandenKitapAlIadeEt("#content", 1);
 };
 
 export const kitapIadeEt = () => {
-  document.querySelector("#content").firstElementChild.remove();
+  document.querySelector("#content").innerHTML="" //firstElementChild.remove();
   kutuphandenKitapAlIadeEt("#content", 2);
 };

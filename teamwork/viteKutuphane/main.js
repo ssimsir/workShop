@@ -1,3 +1,4 @@
+import "bootstrap"
 import './style.css'
 
 import {kitaplariListele} from './src/kitapListele.js'

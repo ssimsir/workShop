@@ -27,6 +27,6 @@ const yazarKitapListele = (bindElement) =>{
 
 
 export const yazaraGoreKitapListele = () => {
-    document.querySelector("#content").firstElementChild.remove();
+    document.querySelector("#content").innerHTML="" //firstElementChild.remove();
     yazarKitapListele("#content");
   };

@@ -32,6 +32,6 @@ const tablodaGoster = (kitaplarObject, bindElement) => {
 };
 
 export const kitaplariListele = () => {
-  document.getElementById("content").firstElementChild.remove();
+  document.getElementById("content").innerHTML="" //firstElementChild.remove();
   tablodaGoster(kitaplar, "#content");
 };
