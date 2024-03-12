@@ -7,7 +7,24 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="wrapper">
+      <div class="box header" id="header">
+
+      </div>
+      <div class="box sidebar" id="sidebar">
+        <button class="btn btn-secondary" id="kitaplariListele">Kitapları Listele</button>
+        <button class="btn btn-secondary" id="yeniKitapEkle">Yeni Kitap Ekle</button>
+        <button class="btn btn-secondary" id="kitapAl">Kitap Al</button>
+        <button class="btn btn-secondary" id="kitapIadeEt">Kitap İade Et</button>
+        <button class="btn btn-secondary" id="yazaraGoreKitapListele">Yazara Göre Kitap Listele</button>
+      </div>
+
+      <div class="box content" id="content"><div id="kitaplar"></div>
+    </div>
+      <div class="box footer" id="footer"><div class="kaydet"></div></div>
+    </div>
+
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
