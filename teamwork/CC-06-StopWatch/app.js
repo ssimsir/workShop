@@ -4,7 +4,6 @@ let startstop = 0;
 function startStop() { 
 
   startstop = startstop + 1;
-
   if (startstop === 1) {
     start();
     document.getElementById("start").innerHTML = `<i class="fa-sharp fa-solid fa-pause"></i>`;
@@ -13,7 +12,6 @@ function startStop() {
     startstop = 0;
     stop();
   }
-
 }
 
 function start() {
@@ -31,8 +29,6 @@ let min = 0;
 let miliSecOut = 0;
 let secOut = 0;
 let minOut = 0;
-
-
 
 function timer() {
   miliSecOut =  milisec<10 ? "0"+milisec : milisec;
