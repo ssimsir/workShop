@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -10,15 +11,16 @@
     
 <div class="container">
     <div class="show-watch">
-            <div class="kadran">
-                <span id="hour"></span> :
+            <p class="text">Stop Watch</p>
+            <hr>
+            <div class="skala">
                 <span id="min"></span> :
                 <span id="sec"></span> :
                 <span id="milisec"></span>
             </div>
             <div class="button">
-                <button onclick="startStop()" id="start">Start</button>
-                <button onclick="reset()" id="start">Reset</button>
+                <button onclick="startStop()" id="start"><i class="fa-sharp fa-solid fa-play"></i></button>
+                <button onclick="reset()" id="start"><i class="fa-sharp fa-solid fa-stop"></i></button>
             </div>
     </div>
 </div>
