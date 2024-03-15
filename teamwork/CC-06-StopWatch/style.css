@@ -36,6 +36,7 @@
     padding: 3rem;
 }
 
+
 .button button{
     color: aquamarine;
     font-size: 3rem;
@@ -46,4 +47,9 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
+}
+
+.button button:hover{
+    
+    cursor: pointer;
 }
