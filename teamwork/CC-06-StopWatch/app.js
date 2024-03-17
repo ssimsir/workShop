@@ -54,6 +54,7 @@ function timer() {
 }
 
 function reset() {
+  stop();
   milisec = 0;
   sec = 0;
   min = 0
